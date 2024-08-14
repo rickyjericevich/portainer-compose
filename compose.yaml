@@ -1,0 +1,17 @@
+# NOTE: use $$ to escape $ in docker compose yaml
+
+# The container runtime settings for portainer can be found here: https://docs.portainer.io/v/2.20/start/install-ce/server/docker/linux
+
+services:
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    # ports: # No need to expose ports when using a reverse proxy like NPM as a sibling compose service
+    #   - 9443:9443 # 
+    volumes:
+      - portainer_data:/data
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: unless-stopped
+
+volumes:
+  portainer_data:
