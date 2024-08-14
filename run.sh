@@ -9,5 +9,5 @@
 	    echo "'docker' command failed."
 		echo 
 	    echo "If you are using WSL, make sure Docker Desktop for Windows is running and that this WSL distro is enabled in Docker Desktop."
-	    echo "Otherwise, install and run docker using this repo: https://github.com/rickyjericevich/docker_setup_on_linux"
+	    echo "Otherwise, install and run docker as pers this repo: https://github.com/rickyjericevich/docker-setup-on-linux"
 }
